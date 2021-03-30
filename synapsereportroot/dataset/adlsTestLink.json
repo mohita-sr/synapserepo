@@ -1,0 +1,33 @@
+{
+	"name": "adlsTestLink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "synapsews0330-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "TestNew1.csv",
+				"folderPath": "Folder1",
+				"fileSystem": "fs0330"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			}
+		]
+	}
+}
