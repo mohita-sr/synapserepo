@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE [dbo].[test]\n(\n    id int NOT NULL,\n    name VARCHAR \n)\nWITH\n(\n    DISTRIBUTION = HASH (id),\n    CLUSTERED COLUMNSTORE INDEX\n)\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "dsql0330",
+				"databaseName": "dsql0330"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

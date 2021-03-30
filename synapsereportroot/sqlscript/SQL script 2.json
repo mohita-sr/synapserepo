@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 2",
+	"properties": {
+		"content": {
+			"query": "CREATE VIEW [dbo].[TestView]\n\tAS SELECT * FROM [test]\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "dsql0330",
+				"databaseName": "dsql0330"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
